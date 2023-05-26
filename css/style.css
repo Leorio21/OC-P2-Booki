@@ -3,7 +3,6 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     margin: 0px;
-    font-size: 16px;
 }
 
 main {
@@ -143,6 +142,7 @@ form {
     padding-left: 10px;
     border: none;
     font-weight: bold;
+    width: 170px;
 }
 
 .form--icon {
@@ -262,218 +262,302 @@ form {
     padding-left: 10px;
 }
 /* LODGING */
-#lodging {
+.lodgingSection {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 40px;
 }
 
-.card--lodging, .card--favorites {
-    border: 5px solid #FFF;
+.lodgingSection h3 {
+    font-size: 1em;
 }
 
-.lodging h2 {
-    margin-bottom: 20px;
-}
-
-.lodging > p {
-    margin-top: 40px;
+.lodgingSection p {
+    font-size: 0.8em;
 }
 
 .lodging {
+    width:68%;
+    padding: 40px;
     background-color: #F2F2F2;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
+    margin: 0px 20px 40px 40px;
 }
 
-.lodging--result {
+.lodging__title {
+    font-weight: 800;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.lodging__list {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    row-gap: 30px;
-    column-gap: 25px;
-}
-
-.card--lodging {
-    flex-direction: column;
-    min-width: 245px;
-}
-
-.card--lodging img {
-    width: 100%;
-    height: 115px;
-    object-fit: cover;
-    border-radius: 15px 15px 0px 0px;
-}
-
-.card--lodging .detail {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    padding: 10px 10px 5px 10px;
-    border-radius: 0px 0px 15px 15px;
 }
 
-.card--lodging .detail .description > p {
-    margin: 5px 0px;
+.lodging__list a {
+    width: 100%;
 }
 
-.favorites {
-    width: 430px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 30px;
-    background-color: #F2F2F2;
+.popular {
+    width:30%;
     padding: 40px;
+    background-color: #F2F2F2;
     border-radius: 20px;
-    height: fit-content;
+    margin: 0px 20px 40px 40px;
 }
-.card--favorites {
+
+.popular__list .card a{
+    display: flex;
     flex-direction: row;
-    width: 350px;
 }
 
-.card--favorites img {
-    min-width: 150px;
-    width: 150px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 15px 0px 0px 15px;
+.popular__title {
+    display: flex;
+    justify-content: space-between;
 }
 
-.card--favorites .detail {
+.popular__title h2{
+    font-weight: 800;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.popular__list {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 10px 20px;
-    border-radius: 0px 15px 15px 0px;
+    width: 100%;
 }
 
-.favorites--title {
-    display: flex;
+.popular__list a {
     width: 100%;
+}
+
+.lodgingResult {
+    border: 5px solid #FFFFFF;
+    margin: 10px 0px;
+}
+
+.lodgingResult__bottom {
+    height: 300px;
+    width: 32%;
+}
+
+.lodgingResult__right {
+    display: flex;
+    height: 150px;
+}
+
+.lodging__img__container__top {
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 63%;
+}
+
+.lodging__img__container__left {
+    border-radius: 20px 20px 0px 0px;
+    width: 40%;
+    height: 100%;
+}
+
+.lodgingResult__description__bottom {
     justify-content: space-between;
+    border-radius: 0px 0px 15px 15px;
+    height: 30%;
+    width: 100%;
+}
+
+.lodgingResult__description__right {
+    justify-content: space-between;
+    border-radius: 0px 15px 15px 0px;
+    width: 70%;
+    height: 100%;
 }
 
 /* ACTIVITY */
-#activity {
-    margin: 60px auto;
+.card {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #585858;
+    position: relative;
+    display: flex;
 }
 
-#activity > h2 {
-    margin-bottom: 20px;
-}
-.activity--result {
-    display: flex;
-    flex-flow: row wrap;
-    column-gap: 20px;
-    row-gap: 20px;
-    column-gap: 30px;
-}
-
-.activity--firstPart, .activity--secondPart {
-    display: flex;
-    flex-direction: row;
-    column-gap: 20px;
-    margin: 0px auto;
-}
-
-.activity {
-    display: flex;
+.activity .card {
     flex-direction: column;
-    box-shadow: 0px 0px 15px #dddddd;
 }
 
-.activity--part1, .activity--part2, .activity--part3, .activity--part4 {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-}
-
-.activity img {
+.card__img__top {
     border-radius: 20px 20px 0px 0px;
-    width: 320px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-.activity--giant img {
-    height: 400px;
+.card__img__left {
+    border-radius: 20px 0px 0px 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.activity--big img {
-    height: 190px;
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px #000000;
 }
 
-.activity--medium img {
-    height: 165px;
+.card__description {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    padding-left: 20px;
 }
 
-.activity--small img {
-    height: 140px;
+.card__description * {
+    padding: 5px 0px;
 }
 
-.activity .title {
-    padding: 15px;
+.activity {
+    margin: 0px 20px 40px 40px;
+    position: relative;
 }
+
+.activity h2 {
+    font-weight: 800;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.activity__list {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 250px 50px 200px;
+}
+
+.activity__list a{
+    height: 100%;
+}
+
+.activity__img__container {
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+.activity__description {
+    justify-content: center;
+    border-radius: 0px 0px 15px 15px;
+    width: 100%;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+.activity__description__title {
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.activity__list__figure {
+    margin: 20px;
+}
+
+.activity-1 {
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+}
+
+.activity-2 {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+}
+
+.activity-3 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.activity-4 {
+    grid-row: 1 / 4;
+    grid-column: 3 / 4;
+}
+
+.activity-5 {
+    grid-row: 1 / 2;
+    grid-column: 4 / 5;
+}
+
+.activity-6 {
+    grid-row: 2 / 4;
+    grid-column: 4 / 5;
+}
+
 
 /* FOOTER */
-footer {
+.footer {
     background-color: #F2F2F2;
-    padding: 0px 0px 40px 60px;
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-start;
+    padding: 50px 0px 0px 40px;
 }
 
-footer h2 {
-    margin-top: 40px;
-    margin-bottom: 20px;
+.footer__block__list__item {
+    font-weight: 400;
+    padding-bottom: 15px
 }
 
-footer li {
-    margin-bottom: 10px;
+.footer__block__list__item a:hover{
+    text-decoration: underline;
 }
 
-footer section {
+.footer__block {
     width: 33%;
+    padding-bottom: 50px;
 }
 
-
+.footer__block__title {
+    font-weight: 700;
+    padding-bottom: 20px;
+}
 
 /* MEDIA QUERIES */
 
 /* Tablette */
 @media screen and (max-width: 992px) {
-    #lodging {
+    .popular {
+        margin: 0px 0px 40px 0px;
+        width:100%;
+    }
+
+    .lodging {
+        margin: 0px 0px 40px 0px;
+        width: 100%;
+    }
+
+    .lodgingSection {
         flex-direction: column-reverse;
-        row-gap: 40px;
+    }
+    
+    .lodging__list {
+        justify-content: center;
     }
 
-    .favorites {
-        width: 100%;
-        margin: auto;
+    .lodgingResult__bottom {
+        width: 40%;
     }
 
-    .favorites > a {
-        width: 100%;
-        min-width: 290px;
-        max-width: 450px;
-        margin: 0px auto;
+    .activity__list {
+        grid: unset;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
     }
 
-    .card--favorites {
-        width: 100%;
-        min-width: 290px;
-        box-shadow: 0px 0px 15px #C2C2C2;
+    .activity__list__figure {
+        width: 28%;
+        height: 200px;
     }
 
-    .card--favorites:hover {
-        box-shadow: 0px 0px 15px #585858;
+    .card {
+        margin: 10px;
     }
-
 }
 
 /* Téléphone */
@@ -504,40 +588,18 @@ footer section {
 
     /* LODGING */
 
+    .popular {
+        border-radius: unset;
+        padding: 40px 0px;
+    }
+
     .lodging {
-        background-color: transparent;
+        background-color: unset;
+        padding: 40px 0px;
+    }
+
+    .lodgingResult__bottom {
         width: 100%;
-        padding: 40px 10px;
-    }
-
-    .lodging--result {
-        flex-direction: column;
-        row-gap: 10px;
-        align-items: center;
-        justify-content: center;
-        padding: 0px 10px;
-    }
-
-    .lodging--result > a {
-        width: 100%;
-        min-width: 290px;
-        max-width: 450px;
-        margin: 0px auto;
-    }
-
-    .card--lodging {
-        width: 100%;
-        min-width: 290px;
-        box-shadow: 0px 0px 15px #C2C2C2;
-    }
-
-    .card--lodging:hover {
-        box-shadow: 0px 0px 15px #585858;
-    }
-
-    .favorites {
-        border-radius: 0px;
-        padding: 40px 10px;
     }
 
     /* SEARCH */
@@ -567,42 +629,22 @@ footer section {
     }
 
     /* ACTIVITY */
-    #activity > h2 {
-        margin-left: 40px;
+    .activity {
+        margin: 0px 0px 40px 0px;
     }
 
-    .activity--firstPart, .activity--secondPart {
-        padding: 0px 10px;
-    }
-    .activity--part1 > a, .activity--part2 > a, .activity--part3 > a, .activity--part4 > a {
+    .activity__list__figure {
         width: 100%;
-        min-width: 290px;
-        max-width: 450px;
-        margin: 0px auto;
-    }
-
-    .activity--giant img, .activity--big img, .activity--medium img, .activity--small img {
-        width: 100%;
-        height: 140px;
-    }
-
-    .activity--result {
-        flex-direction: column;
-        row-gap: 20px;
-    }
-    .activity--firstPart, .activity--secondPart {
-        width: 100%;
-        flex-direction: column;
-        row-gap: 20px;
-    }
-
-    /* FOOTER */
-    footer {
-        flex-direction: column;
-        padding-left: 20px;
+        height: 200px;
     }
     
-    footer section {
+    /* FOOTER */
+    .footer__block {
         width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        justify-content:flex-start;
     }
 }

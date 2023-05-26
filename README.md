@@ -2,7 +2,7 @@
 
 Parcours OpenClassromm : Développeur WEB
 
-Projet 2 : Transformez une maquette en site web avec HTML & CSS
+Projet 2 : Transformez une maquette (2 fichiers jpeg - 1 desktop - 1 mobile) en site web avec HTML & CSS
 
 
 
@@ -10,7 +10,7 @@ Compétences évaluées :
 
 Intégrer du contenu conformément à une maquette
 
-Implémenter une interface responsive
+Implémenter une interface responsive (en respectant la maquette)
 
 
 
